@@ -7,7 +7,13 @@ for (var i = 1; i <= 100; i++) {
 console.log(numeri);
 
 for (var i = 0; i < numeri.length; i++) {
-  if (true) {
-
+  if (!(numeri[i]%3) && !(numeri[i]%5)) {
+    numeri[i] = "FizzBuzz";
+  }else if (!(numeri[i]%3)) {
+    numeri[i] = "Fizz";
+  } else if (!(numeri[i]%5)) {
+    numeri[i] = "Buzz";
   }
 }
+
+console.log(numeri);
